@@ -13,7 +13,7 @@ public class PageSetup {
         System.setProperty("webdriver.chrome.driver", projectLocation + "/Resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(https://ultimateqa.com/simple-html-elements-for-automation/);
+        driver.get("https://ultimateqa.com/simple-html-elements-for-automation/");
     }
 
     @AfterEach
