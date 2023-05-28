@@ -19,7 +19,22 @@ public class UltimateQATest extends PageSetup{
 
         }
 
+        @Test
+    public void test2() throws InterruptedException {
+        WebElement nameTextField = driver.findElementByName("et_pb_contact_name_0");
+        nameTextField.sendKeys("Tester");
 
+
+        WebElement emailTextField = driver.findElementByName("et_pb_contact_email_0");
+        emailTextField.sendKeys("Tester@testar.com");
+
+        Thread.sleep(3000);
+
+        WebElement emailButton =  driver.findElementByName("et_builder_submit_button");
+        emailButton.click();
+
+            Thread.sleep(3000);
+        }
 
 
 }
